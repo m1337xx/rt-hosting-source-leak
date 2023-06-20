@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "Pop-R";
+    src: url("Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Pop-L";
+    src: url("Poppins-Light.ttf");
+}
+
+* {
+    font-family: "Pop-R";
+    color: #EEEEEE
+}
+
+body {
+    background-color: #222831;
+    background: linear-gradient(to bottom right, #222831, #000000);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+input[type="submit"] {
+    background-color: #5f6874;
+    width: 80px;
+    margin: 10px;
+    padding: 6px;
+    border-width: 0px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 10px #393E46;
+    transition: all 0.28s ease-in-out;
+}
+input[type="submit"]:hover {
+    background-color: #8597b6;
+    border-radius: 8px;
+    box-shadow: 0 0 30px 15px #494f59;
+}
+
+br {
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+    color:#00ADB5;
+    transition: all 0.2s ease-in-out;
+}
+a:hover {
+    color: #00e6f2;
+    text-decoration: underline;
+    animation: pulsate 1.8s ease-in-out infinite;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.hl {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hr {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.main {
+    text-align: center;
+}
+
+.packs {
+    display: flex;
+    justify-content: center;
+}
+
+.pack {
+    background-color: #393E46;
+    height: auto;
+    width: 250px;
+    margin: 25px;
+    border-radius: 25px;
+    box-shadow: 0 0 20px 10px #393E46aa;
+    transition: all 0.45s ease-in-out;
+}
+.pack:hover {
+    background-color: #494f59;
+    border-radius: 15px;
+    box-shadow: 0 0 30px 15px #494f59aa;
+}
+
+.feedback {
+    background-color: #393E46;
+    height: auto;
+    width: 35%;
+    margin: 25px;
+    border-radius: 25px;
+    box-shadow: 0 0 20px 10px #393E46aa;
+    transition: all 0.45s ease-in-out;
+}
+.feedback:hover {
+    background-color: #494f59;
+    border-radius: 15px;
+    box-shadow: 0 0 30px 15px #494f59aa;
+}
+
+.pack input[type="text"] {
+    margin-right: 5px;
+}
+
+h3 {
+    color: #00ADB5;
+}
+
+h1 {
+    font-family: "Pop-R";
+    font-weight: 900;
+}
+
+@keyframes pulsate {
+    0% {
+        text-shadow: 0 0 8px #00ADB5;
+    }
+    50% {
+        text-shadow: 0 0 13px #00e6f2;
+    }
+    100% {
+        text-shadow: 0 0 8px #00ADB5;
+    }
+}
